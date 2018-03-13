@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/HashTable/HashTable/Debug
+/SplayTree/SplayTree/Debug
+/SplayTree/SplayTree.VC.VC.opendb
+*.db
