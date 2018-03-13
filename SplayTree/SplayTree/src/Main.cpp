@@ -2,23 +2,30 @@
 #include<algorithm>
 #include<vector>
 #include<list>
+#include"../include/AVLTree.h"
+#include"../include/SplayTree.h"
 
 using namespace std;
 
 int main() {
-	list<int> vec{ 1,2,3,4,5,6 };
-	for (int num : vec)cout << num << " ";
+	AVLTree* avlTree = new AVLTree();
+
+	vector<int> res1;
+
+	avlTree->insert(1);
+	avlTree->insert(3);
+	avlTree->insert(5);
+	avlTree->erase(1);
+	avlTree->insert(-2);
+	avlTree->erase(3);
+	avlTree->insert(-10);
+
+	res1 = avlTree->inorderTraversal();
+	for (int num : res1) {
+		cout << num << " ";
+	}
 	cout << endl;
-	vec.back()++;
-	/*for (auto iter = vec.begin(); iter != vec.end();iter++) {
-		if (!(*iter & 1)) {
-			int num = *iter;
-			iter = vec.insert(iter,num);
-			iter++;
-		}
-	}*/
-	for (int num : vec)cout << num << " ";
-	cout << endl;
+
 	cin.get();
 	return 0;
 }

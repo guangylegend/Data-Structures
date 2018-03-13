@@ -109,6 +109,14 @@ private:
 		}
 		return x;
 	}
+
+	void inorderTraversal_utility(node* x, vector<int>& res) {
+		if (!x)return;
+		inorderTraversal_utility(x->left, res);
+		res.push_back(x->val);
+		inorderTraversal_utility(x->right, res);
+	}
+
 public:
 	SplayTree() : root(nullptr), t_size(0) {}
 
@@ -159,6 +167,16 @@ public:
 		}
 		delete r;
 		t_size--;
+	}
+
+	int size() {
+		return t_size;
+	}
+
+	vector<int> inorderTraversal() {
+		vector<int> res;
+		inorderTraversal_utility(root, res);
+		return res;
 	}
 	
 };
