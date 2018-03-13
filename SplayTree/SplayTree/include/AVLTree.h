@@ -2,9 +2,7 @@
 #define AVLTREE_H
 
 #include <vector>
-#include <iostream>
-
-using namespace std;
+#include <algorithm>
 
 class AVLTree {
 private:
@@ -29,8 +27,8 @@ private:
 		x->right = y->left;
 		y->left = x;
 		
-		x->height = max(height(x->left), height(x->right)) + 1;
-		y->height = max(height(y->left), height(y->right)) + 1;
+		x->height = std::max(height(x->left), height(x->right)) + 1;
+		y->height = std::max(height(y->left), height(y->right)) + 1;
 		return y;
 	}
 
@@ -39,8 +37,8 @@ private:
 		x->left = y->right;
 		y->right = x;
 
-		x->height = max(height(x->left), height(x->right)) + 1;
-		y->height = max(height(y->left), height(y->right)) + 1;
+		x->height = std::max(height(x->left), height(x->right)) + 1;
+		y->height = std::max(height(y->left), height(y->right)) + 1;
 		return y;
 	}
 
@@ -94,7 +92,7 @@ private:
 				}
 			}
 		}
-		x->height = max(height(x->left), height(x->right)) + 1;
+		x->height = std::max(height(x->left), height(x->right)) + 1;
 		return x;
 	}
 
@@ -151,13 +149,13 @@ private:
 					}
 				}
 			}
-			x->height = max(height(x->left), height(x->right)) + 1;
+			x->height = std::max(height(x->left), height(x->right)) + 1;
 			return x;
 		}
 		return nullptr;
 	}
 
-	void inorderTraversal_utility(node* x, vector<int>& res) {
+	void inorderTraversal_utility(node* x, std::vector<int>& res) {
 		if (!x)return;
 		inorderTraversal_utility(x->left, res);
 		res.push_back(x->val);
@@ -191,8 +189,8 @@ public:
 		return t_size;
 	}
 
-	vector<int> inorderTraversal() {
-		vector<int> res;
+	std::vector<int> inorderTraversal() {
+		std::vector<int> res;
 		inorderTraversal_utility(root, res);
 		return res;
 	}

@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelfBalancedTree", "SplayTree\SplayTree.vcxproj", "{777586D3-D606-490A-AF44-79F6F5CB4E95}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTestTree", "UnitTestTree\UnitTestTree.vcxproj", "{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{777586D3-D606-490A-AF44-79F6F5CB4E95}.Release|x64.Build.0 = Release|x64
 		{777586D3-D606-490A-AF44-79F6F5CB4E95}.Release|x86.ActiveCfg = Release|Win32
 		{777586D3-D606-490A-AF44-79F6F5CB4E95}.Release|x86.Build.0 = Release|Win32
+		{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}.Debug|x64.ActiveCfg = Debug|x64
+		{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}.Debug|x64.Build.0 = Debug|x64
+		{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}.Debug|x86.ActiveCfg = Debug|Win32
+		{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}.Debug|x86.Build.0 = Debug|Win32
+		{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}.Release|x64.ActiveCfg = Release|x64
+		{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}.Release|x64.Build.0 = Release|x64
+		{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}.Release|x86.ActiveCfg = Release|Win32
+		{6E6471B5-E6C0-4B64-8FAE-3D8EAEF2A711}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

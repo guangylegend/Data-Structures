@@ -1,6 +1,8 @@
 #ifndef SPLAYTREE_H
 #define SPLAYTREE_H
 
+#include <vector>
+
 class SplayTree {
 private:
 	
@@ -110,7 +112,7 @@ private:
 		return x;
 	}
 
-	void inorderTraversal_utility(node* x, vector<int>& res) {
+	void inorderTraversal_utility(node* x, std::vector<int>& res) {
 		if (!x)return;
 		inorderTraversal_utility(x->left, res);
 		res.push_back(x->val);
@@ -173,8 +175,8 @@ public:
 		return t_size;
 	}
 
-	vector<int> inorderTraversal() {
-		vector<int> res;
+	std::vector<int> inorderTraversal() {
+		std::vector<int> res;
 		inorderTraversal_utility(root, res);
 		return res;
 	}

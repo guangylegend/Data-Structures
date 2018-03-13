@@ -35,3 +35,5 @@
 /SplayTree/SplayTree.VC.VC.opendb
 *.db
 /SplayTree/Debug
+/SplayTree/UnitTestTree/Debug
+/SplayTree/ipch/UNITTESTTREE-4934c336
