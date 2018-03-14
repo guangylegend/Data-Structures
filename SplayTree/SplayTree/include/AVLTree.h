@@ -181,8 +181,11 @@ public:
 	}
 
 	void erase(int key) {
-		root = erase_utility(root, key);
-		t_size--;
+		node* r = find(key);
+		if (r) {
+			root = erase_utility(root, key);
+			t_size--;
+		}
 	}
 
 	int size() {

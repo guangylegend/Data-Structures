@@ -162,6 +162,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="UnitTestAVLTree.cpp" />
+    <ClCompile Include="UnitTestSplayTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SplayTree\SplayTree.vcxproj">
